@@ -1,7 +1,6 @@
 # WP_Plugin_Development
-<br>
-![Custom-Wordpress-Plugin-Development](https://github.com/user-attachments/assets/e327c48d-e615-493a-80e3-5b19534c3992)
-<br>
+![Custom-Wordpress-Plugin-Development](https://github.com/user-attachments/assets/861697f0-0cd3-414d-b856-165b1e16d08f)
+
 Custom WordPress Plugin (In Development)
 
 <br>
