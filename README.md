@@ -1,7 +1,7 @@
 # WP_Plugin_Development
 Custom WordPress Plugin (In Development)
-<br>
-Welcome to the repository for the Custom![Custom-Wordpress-Plugin-Development](https://github.com/user-attachments/assets/e327c48d-e615-493a-80e3-5b19534c3992)
+<br>![Custom-Wordpress-Plugin-Development](https://github.com/user-attachments/assets/e327c48d-e615-493a-80e3-5b19534c3992)
+Welcome to the repository for the Custom
  WordPress Plugin. This is an early-stage open-source project aimed at building a flexible and customizable plugin to extend the functionality of WordPress websites.
 
 Project Status: Early Development
