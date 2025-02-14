@@ -1,0 +1,11 @@
+//COMMON WP BLOCK ATTRIBUTES 
+//Attributes are defined by JS objects
+
+{
+    "name":"create-block/gutenpride", // This is the identifier. Theme or plugins name follow by the block name.
+    "version":"0.1.0", //Change version if update it
+    "title":"Gutenpride", //Name that apprerars on block editor or when you type / to search
+    "category":"text", //Determines where block appears in the block inserter. Main categories include: text, media and design
+    "icon":"flag", //Appears in block title
+    "description":"A Gutenberg block to show your pride! This block enables you to type text and style it with the color font Gilbert from Type with Pride.", //Describe block's purpose or features
+}

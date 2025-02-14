@@ -1,0 +1,8 @@
+In terminal enter your custom block folder
+Type: npx @wordpress/create-block@latest <name of the block>
+
+Block php file change Description and Author
+
+FILES:
+src > block.json  -  Block settings, configurations and how it behaves
+   -You can change attriute icon and use you custom i con or goto  WP Dashicon (developer.wordpress.org/resource/dashicons)

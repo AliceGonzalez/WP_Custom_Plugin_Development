@@ -7,6 +7,18 @@
 import { useBlockProps } from '@wordpress/block-editor';
 
 /**
+ * RichText import allows us to create editable text fileds.
+ */
+
+import { RichText } from '@wordpress/block-editor';
+
+/**
+ * InnerBlocks import allows us to use core React.js blocks.
+ */
+
+import { InnerBlocks } from '@wordpress/block-editor';
+
+/**
  * The save function defines the way in which the different attributes should
  * be combined into the final markup, which is then serialized by the block
  * editor into `post_content`.
@@ -15,10 +27,21 @@ import { useBlockProps } from '@wordpress/block-editor';
  *
  * @return {Element} Element to render.
  */
-export default function save() {
+export default function save( {attributes}) {
+	const { header, list} = attributes;
 	return (
-		<p { ...useBlockProps.save() }>
-			{ 'Photoshoot Themes – hello from the saved content!' }
-		</p>
+		<div { ...useBlockProps.save()}>
+			{ header && <RichText.Content tagName="h2" value={header} /> }
+			{ list && <RichText.Content tagName="ul" multiline="li" value={ list } /> }
+
+			<div className="image-block">
+				{ /* Render the saved content of the image block */}
+				<InnerBlocks.Content />
+
+			</div>
+
+
+		</div>
+
 	);
 }

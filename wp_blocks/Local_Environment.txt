@@ -1,0 +1,31 @@
+The original block are called ore blocks.
+There 6 types: Text, Media, Design, Widgets, Theme and Embeds.
+
+Tools Needed: 
+-Local WP
+
+**Local WP SET UP:**
+Create a new site
+Enter name of the site
+Choose environment setting (preferred or custom)
+    -For custom: you will need an username, password and email
+    -Remember: the information above you will need everytime to log into the site (record in safe place)
+Click WP Admin and enter the username and password you chose above
+On dashboard click on Appearance > Theme
+    -From the themes chosse one that will allow you to custimeze blocks (Twenty Twenty-One - Default)
+    -Activate Theme
+ENVIRONMENT SETUP COMPLETE!
+
+**INSTALLING: Node.js and npm used to build js blocks**
+
+Node.js - A JS runtime environment that allows you to  execute JavaSCript code outsite of a web browser
+   -To install: nodejs.org
+   -Download LTS Recommeneded version as is more stable
+npm (Node Package Manager) - A packet manager for the JS language that is mainly used to manage liraries, dependencies, and tools.
+
+Check on terminal that they were both installed:
+   - node -v
+   - npm -v
+
+Where to save block:
+APP_FOLDER > app > public > wp-content > plugin > custom-blocks-folder

@@ -5,11 +5,25 @@
   "version": "0.1.0",
   "title": "Photoshoot Themes",
   "category": "widgets",
-  "icon": "smiley",
-  "description": "Example block scaffolded with Create Block tool.",
+  "icon": "camera",
+  "description": "A block that shows different choices for photoshoots theme packages.",
   "example": {},
   "supports": {
-    "html": false
+    "html": false,
+    "align": true,
+    "customClassName": true,
+    "inserter": true,
+    "reusable": true
+  },
+  "attributes": {
+    "header": {
+      "type": "string",
+      "default": ""
+    },
+    "list": {
+      "type": "string",
+      "default": ""
+    }
   },
   "textdomain": "photoshoot-themes",
   "editorScript": "file:./index.js",

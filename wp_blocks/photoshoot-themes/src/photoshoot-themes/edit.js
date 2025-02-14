@@ -14,6 +14,18 @@ import { __ } from '@wordpress/i18n';
 import { useBlockProps } from '@wordpress/block-editor';
 
 /**
+ * RichText import allows us to create editable text fileds.
+ */
+
+import { RichText } from '@wordpress/block-editor';
+
+/**
+ * InnerBlocks import allows us to use core React.js blocks.
+ */
+
+import { InnerBlocks } from '@wordpress/block-editor';
+
+/**
  * Lets webpack process CSS, SASS or SCSS files referenced in JavaScript files.
  * Those files can contain any CSS code that gets applied to the editor.
  *
@@ -29,13 +41,28 @@ import './editor.scss';
  *
  * @return {Element} Element to render.
  */
-export default function Edit() {
+export default function Edit(attributes, setAttributes) {
+	const { header, list } = attributes;
 	return (
-		<p { ...useBlockProps() }>
-			{ __(
-				'Photoshoot Themes – hello from the editor!',
-				'photoshoot-themes'
-			) }
-		</p>
+		<div { ...useBlockProps() }> 
+			<RichText
+			tagName="h2"
+			value={ header }
+			onChange={ ( value ) => setAttributes ( { header:value })}
+			placeholder={ __( 'Enter header...', 'photoshoot-themes' ) }
+			/>
+			<RichText
+			tagName="ul"
+			multiline="li"
+			value= { list }
+			onChange={ ( value ) => setAttributes ( { header:value })}
+			placeholder={ __( 'Enter list...', 'photoshoot-themes' ) }
+			/>
+			<div className="image-block">
+			<InnerBlocks allowedBlocks={['core-image']}
+			template={[['core-image']]}/> 
+			</div>
+
+		</div>
 	);
 }
