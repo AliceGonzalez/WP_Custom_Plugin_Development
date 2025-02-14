@@ -13,19 +13,4 @@ Widgets: Adding custom widgets for sidebars, footers, and other areas.
 API Integrations: Enabling seamless connections with third-party services.
 Getting Started
 Installation (In Progress)
-Instructions for installation and setup will be provided once the core features are ready for testing. For now, you can clone or fork the repository to keep up with development.
-
-bash
-Copy
-git clone https://github.com/your-username/custom-wordpress-plugin.git
-Development & Contribution
-We are open to community contributions, even in the early stages! If you're interested in helping shape the plugin or have ideas for features, please follow these steps:
-
-Fork the repository.
-Create a new branch (e.g., feature/your-feature).
-Develop your feature or bug fix.
-Submit a pull request. We’ll review it and merge if it fits within the plugin's vision.
-Feel free to open issues if you have suggestions, feature requests, or bugs to report.
-
-License
-This plugin is licensed under the MIT License.
+Instructions for installation and setup will be provided once the core features are ready for testing. 
